@@ -1,35 +1,35 @@
 \section{Analyst in control}
 
-Throughout our study we observed that analysts are constantly annotating new data, modifying existing annotations, archiving irrelevant data, and examining data in visualization. This is in contrast with many other visualization projects, where users are faced with pre-populated data, and use visualization to gain insight into the hidden patterns behind a fixed set of data. In the task of information analysis, analysts have to modify and re-structure the underlying data as their hypothesis evolves. Specifically, annotation can be made horizontally and vertically.
+Throughout our study we observed that analysts are constantly annotating new data, restructuring existing annotations, archiving irrelevant data, and examining data in visualization. This is an extension compared to many other visualization tools, with which users are faced with pre-populated data and tasked with creating visual mappings to identify hidden patterns behind the data. In Intelligence Analysis and many other information analysis tasks, analysts frequently create and re-recreate data models to serve their analysis as their hypothesis evolves.
+
+Data modeling is often seen as a precondition to perform any visual analysis. Data modeling transforms raw data to structured entities that are readable and processable to software. The focus of Visual Analytics has been largely put on combining automated modeling with interactive visualizations to facilitate reasoning \citep{Keim2010}, emphasizing the role of human in the loop of visualization and insight generation. In practice, however, we find that data modeling is an iterative process that is intermingled with visual analysis. New insights inspires analysts to re-model data either in a different scope (horizontally) or in a different level of detail (vertically). 
 
 Horizontally, analysts annotate different parts of the data. For example, an intelligence project typically includes data that consists of a series of \textit{critical events}. Analysis of the data though can focus on some of the events. Analysts decide which events to look into first. As they come up with new hypotheses or need more data to validate his hypothesis, they may continue annotating and visualizing other events.
 
 Vertically, analysts annotate data to the level of detail they prefer at the moment of their analysis. The same piece of a document can be annotated in different ways according to the analyst's need. For example, when the analysts are in the early phase of the investigation and want to get an overview of all events, they can annotate an event with time, place, and a brief summary. As they get more interested in a specific event, they can add the people that were involved and tools/resources that were used in the event. If the event becomes critical and needs to be compared with other events to find patterns, analysts might annotate the step-by-step process how people did it in the event. In contrast, if an event becomes irrelevant to the hypothesis, the analysts may remove its details or the event altogether to avoid distraction. 
 
-The science of visualization is rapidly evolving over the years. it starts with research into visualization algorithms that organize data into patterns. Researchers then explore dynamic visualization computing that accepts user interaction. They suggest that interactive visual interfaces can better assist analytic reasoning, termed as \emph{Visual Analytics} \citep{thomas2005illuminating}. Such interactions mainly focus on the rearrangement of the visual elements. 
-
-My research suggests extending the interaction in visual analytics beyond visual elements to manipulating the underlying data. Data modeling and data visualization are inside one pipeline in the process of analytic reasoning. While interface control helps analysts choose \textit{how} data looks like, they should also take  control of \textit{what} data they would like to look into. Analysts should be able to add data, remove data, change the level of details, and select the right scope of data while they are exploring. 
-
 We use annotation to allow analysts to create and modify their data of interest. This complements the popular approach which employs 
-natural language processing (NLP) techniques to automatically extract and
+automated modeling such as natural language processing (NLP) techniques to extract and
 model entities \citep{Bier2010, Stasko2008}. While algorithms for named
 entity recognition have improved significantly, developers of the
 entity-based systems \citep{Gorg2014} admitted that the
 accuracy of automatic entity extraction is not sufficient to support
-human analysis. Besides, relationships identified by algorithms are
+human analysis. This is especially true when the tasks are exploratory in nature, where the questions are ill-defined and no training data is available \citep{thomas2005illuminating}. Besides, relationships identified by algorithms are
 limited to the co-occurrence of entities in the same document, whereas
 identifying meaningful relationships \emph{implicit} in documents that
 are of more importance to analysts is not possible. And perhaps the most
 problematic is the fact that the NLP treats all pieces of information
-equally with no regard to the problem analysts have at hand. We posit
+equally with no regard to the problem analysts have at hand. 
+
+We posit
 that information analysis is a progressive process, wherein analysts
 place a varying priority on evidence depending on how they frame the
-problem \citep{Heuer1999}. Manual annotation allows for greater user
-control, allows more integrated source data objects to be identified,
-and avoids the user problems associated with automatic identification of
+problem \citep{Heuer1999}. Annotation allows for user
+control in the process, allows integrated source data objects to be identified,
+and avoids the problems associated with automatic identification of
 disaggregated people, locations, and times \citep{Bier2008}. Analysts can
 decide their own information of interest and granularity that best suits
-their ad-hoc analytic needs.
+their ad-hoc analytic needs. The guide to visually exploring data ``Overview first, zoom and filter, then details-on-demand'', as proposed by \cite{shneiderman2003eyes} describes how data should be presented on screen. We suggest extending the guide to be ``Overview first, model data, analyze, zoom and filter, re-model, then details on demand''.
 
 \section{Collaboration, structured technique, and the role of computing tools}
 
