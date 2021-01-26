@@ -29,7 +29,7 @@ maximum and minimum)\label{fig:survey}}
 
 In examining participants' created data objects,
 we noted a distinction between filtering and accretion
-strategies, similar to what was reported in the paper prototype study \citep{Carroll2013}. Filtering is selectively modeling of data
+strategies, similar to what was reported in the paper prototype study \citep{Carroll2013}. Filtering is the selectively modeling of data
 and adding to an artifact. Users must decide what information is
 relevant, and thus what is to be excluded, as well as what granularity
 of information is to model. Filtering requires more team coordination
@@ -37,7 +37,7 @@ because teammates must reach a common ground of the current problem as
 well as information needed to answer the problem. Figure~\ref{fig:network_accretion}a is an example of network built with filtering strategy. It only represented key information of robberies.
 
 Accretion is an attempt to comprehensively represent the problem by
-adding all information to an artifact. Users extract every fact from the
+adding all information to an artifact. Users extract as many facts as they can from the
 document, regardless of its immediate relevance to the problem.
 Accretion requires less coordination as it is relatively mechanical note-taking. A disadvantage of accretion is that it can be time-consuming
 to model all details and the produced artifact could be fairly complex.
@@ -69,8 +69,8 @@ much time in detail events, and many did not help their analysis at all:
 
 We examined the patterns of the annotations teams created. We saw a clear distinction in terms of how teams divided their work in creating annotations. Seven
 teams created annotations with a document-based pattern: each teammate focused on their own set of documents and made concrete detailed annotations.
-(as shown in Figure~\ref{fig:labor_division}a). Individuals consider the known facts of the current document and seek to identify the cause-effect relationships of this document. We take the term \textit{situational logic} from \citep{Heuer1999} to describe this pattern, in which teams start hypotheses ``with concrete elements of the current situation, rather than with broad generalization that encompasses many similar cases'' (p.32). The team relied on partners to identify and share useful information within their assigned documents. The failing of this
-strategy is thus in case an individual fails to identify or convey
+(as shown in Figure~\ref{fig:labor_division}a). Individuals consider the known facts of the current document and seek to identify the cause-effect relationships of this document. We take the term \textit{situational logic} from \citep{Heuer1999} to describe this pattern, in which teams start hypotheses ``with concrete elements of the current situation, rather than with broad generalization that encompasses many similar cases'' (p.32). The team relied on partners to identify and share useful information within their assigned documents. The downside of this
+strategy is when an individual fails to identify or convey
 evidence in the document, the team may overlook or misunderstand the information
 altogether.
 
@@ -120,14 +120,14 @@ inferential link (Figure~\ref{fig:network_cluster}b, marked in red in the graph)
 The differences in network artifacts relate to how teams annotated and represented entities in documents, especially in circumstances of incomplete, ambiguous information. For example, we have the following document snippets:
 
 \begin{quote}
-	Case 1: Suspect is shown running down N Atherton and jumping the passenger side of a white van
+	Case 1: Suspect is shown running down N Atherton and jumping into the passenger side of a white van
 	
 	Case 2: [...] we all watched as the guy ran around the parking lot. I went to the door and saw him jump into a white van of some type
 \end{quote}
 
-In both cases, suspects are associated with ``a white van''. Yet with only that information we are not able to conclude the white vans are the same one. That's the \textit{uncertainty} analysts must consider, and must properly represent. We see three types of annotation in team's network artifacts, as shown in Figure~\ref{fig:van}. In figure a, the vans are treated as two separate entities with the same name. It keeps their relationship open to question, yet analysts might have difficulty in identifying this hidden link in later analysis, especially when the network scales. In figure b, analysts merge the two vans into a single entity. This representation makes the connection apparent, yet misses the uncertainty information, which could mislead teammates. We found some teams using the notepad tool in CAnalytics to complement that the link is hypothetical. In figure c, vans are perceived as two entities but connected with a link, which is often labeled with text like ``hypothetical''. 
+In both cases, suspects are associated with ``a white van''. Yet with only that information we are not able to conclude the white vans are the same one. That's the \textit{uncertainty} analysts must consider, and must properly represent. We see three types of annotation in team's network artifacts, as shown in Figure~\ref{fig:van}. In figure a, the vans are treated as two separate entities with the same name. It keeps their relationship open to question, yet analysts might have difficulty in identifying this hidden link in later analysis, especially when the network scales. In figure b, analysts merge the two vans into a single entity. This representation makes the connection apparent, yet misses the uncertainty information, which could mislead teammates. Finally, we found some teams using the notepad tool in CAnalytics to complement that the link is hypothetical. In figure c, vans are perceived as two entities but connected with a link, which is often labeled with text like ``hypothetical''. 
 
-The three representations reflect different strategies in handling uncertainty. In figure a, analysts are more ``negative'', or conservative, toward uncertainty. They avoid bringing in any hypotheses during the stage of annotation, so as to avoid any bias confirmation in the analysis. In contrast, analysts in figure b are most ``positive'' with uncertainty. If they believe the inferential connection is a high possibility, such representation helps them identify important patterns and make quick decisions. In general, figure c appears to be more reasonable. It represents the connection while preserving the uncertainty, yet requires more annotation efforts. 
+The three representations reflect different strategies in handling uncertainty. In figure a, analysts are more conservative toward uncertainty. They avoid bringing in any hypotheses during the stage of annotation, so as to avoid any bias confirmation in the analysis. In contrast, analysts in figure b are more ``aggressive'' with uncertainty and created links for inferential connections. Such representation helps them identify important patterns and make quick decisions, but run the risk of making wrong assumptions. In general, figure c appears to be more reasonable. It represents the connection while preserving the uncertainty, yet requires more annotation efforts. 
 
 
 \begin{figure}
@@ -159,7 +159,7 @@ scattered in different artifacts.
 % \input{./04-Study_one/awareness_table}
 
 
-On the contrary, in connected-cluster networks, facts and inferences overlaid in one artifact together drive the layout of the
+In contrast, in connected-cluster networks, facts and inferences overlaid in one artifact together drive the layout of the
 network, are better synthesized, and give analysts a clearer picture in one place. Teams may discuss and evaluate the level of uncertainty of inferences to decide whether to add them to the
 network. This strategy makes analysis more interactive among teammates:
 they need to negotiate, evaluate, and reach consensus on the value and
@@ -306,15 +306,15 @@ accessed by other collaborators. While data
 generated by users is automatically shared, it is up to collaborators
 whether to read/edit the shared information or ignore information altogether.
 The log showed that on average, 77.6\% of the created entities
-were \emph{read} by at least one other teammate. Further, We measured how
+were \emph{read} by at least one other teammate. Further, we measured how
 many entities were \emph{edited} by collaborators, a phenomenon we argue
 requires higher awareness, because the collaborator must not only realize
 the creation of the entity, but also understand its content. We
 defined \emph{peer editing}, manipulated as the ratio of editing 
 entities over editing those created by oneself. We found that all teams
 edited collaborator's entity objects, with a peer editing value equal
-to .83 ($SD=.45$). The result suggests that teams had little difficulty
-accessing and modifying partner's created data objects.
+to .83 ($SD=.45$). The result suggests that individuals had little difficulty
+accessing or modifying partner's created data objects.
 
 %/bvh{I don't understand this paragraph...what are you trying to say...that they would like to have a shared space?}
 One major critique is the lack of support for sharing intermediate analytic

@@ -1381,8 +1381,8 @@ minus3pt\let\@listi\@listI}%
 \def\@submitdate{}
 \def\@copyrightyear{}
 
-\def\adviser{Thesis Adviser}
-\def\coadviser{Thesis Co-Adviser}
+\def\adviser{Dissertation Adviser}
+\def\coadviser{Dissertation Co-Adviser}
 \def\chair{Chair of Committee}
 \def\cochair{Co-Chair of Committee}
 \def\head#1{Head of the Department of #1}
@@ -1421,7 +1421,7 @@ minus3pt\let\@listi\@listI}%
 %    \begingroup\Large\begin{center}{\@title}\end{center}\endgroup
     \begingroup\normalfont\Large\begin{center}{\@title}\end{center}\endgroup
     \vss\vss\vss
-    \centerline{A Thesis in}
+    \centerline{A Dissertation in}
     \centerline{\@dept}
     \centerline{by}
     \centerline{\@author}
@@ -1448,7 +1448,7 @@ minus3pt\let\@listi\@listI}%
 \vbox{
     \thispagestyle{empty}
     \begin{singlespace}
-    \hbox{We approve the thesis of \@author .}
+    \hbox{We approve the dissertation of \@author .}
     \vskip 0.35in 
     \hbox{\null\hskip 3.9in Date of Signature}
     \ifx\@empty\@readerone \else \signrule
@@ -1492,7 +1492,7 @@ minus3pt\let\@listi\@listI}%
 \vbox{
     \thispagestyle{empty}
     \begin{singlespace}
-    \hbox{The thesis of \@author\ was read and approved\footnotemark\ by the following:}
+    \hbox{The dissertation of \@author\ was read and approved\footnotemark\ by the following:}
 %    \vskip 0.35in 
     \vskip 0.75in
     \ifx\@empty\@readerone \else \hskip 0.5in 

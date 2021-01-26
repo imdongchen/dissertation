@@ -1,4 +1,4 @@
-\section{Setting and Method}\label{classroom-study-settings}
+\section{Classroom Settings}\label{classroom-study-settings}
 
 The setting for this study was an undergraduate course in an intelligence
 training program at Pennsylvania State University. The program was designed to train students
@@ -25,7 +25,7 @@ to emphasize hands-on practice on team-based intelligence analysis.
  table). Analysts were unable to contribute simultaneously, an issue
  known as production blocking \citep{Diehl1987a}. Students often divide their work by tools: each person picks a tool, creates and analyzes an artifact
  with that tool on their own, and puts individual analysis together towards the end. This had the consequence that findings and
- hypotheses be made without integrating collective efforts and diverse
+ hypotheses were made without integrating collective efforts and diverse
  knowledge. Analysts coordinated work by manually sharing documents
  or graphs through email or cloud storage service (e.g.~Dropbox),
  resulting in a scattered placement of results, requiring repeated manual
@@ -35,7 +35,7 @@ to emphasize hands-on practice on team-based intelligence analysis.
  %\bvh{do demographic stuff first}
  Of the 98 students enrolled in the course (from
  two sections), 73 consented to participate in the study. All of the 73 students
- held major in the program of Security and Risk Analysis. Most (75\%) of them
+ majored in the program of Security and Risk Analysis. Most (75\%) of them
  were in the third academic year ($M=3.06 \text{ years}, SD=.44$), indicating that participants in
  our study had relatively advanced experience and knowledge in intelligence
  analysis. Participants' age ranged from 19 to 28 ($M=20.4, SD=1.18$). 77\% of the
@@ -45,7 +45,7 @@ to emphasize hands-on practice on team-based intelligence analysis.
  One of the authors walked through the features of CAnalytics, without enforcing or implying any strategic use of the tool. Students then accomplished a small case analysis at their own pace. During the week of the
  actual study, one author was constantly available to help with any technical
  issues. Although students were encouraged to make full use of CAnalytics, to
- ensure a naturalist environment students were always free to employ any other
+ ensure a natural environment students were always free to employ any other
  tools that they believed useful.
 
  \begin{figure}
@@ -68,21 +68,27 @@ the project students were required to submit a team report, describing their
 hypotheses, assumptions, conclusions, and supporting evidence. When in class, students used a 27-in Macintosh desktop (as shown in Figure~\ref{fig:classroom}. Students could use any equipment when outside class.
 
 Students were randomly assigned into 25 teams (23 three-person teams and 2
-two-person teams). Research suggested that group size be an important factor in
+two-person teams). Research suggests that group size is an important factor in
 group collaboration, and two-person teams might behave differently from
 three-person teams. We thus excluded data from the two-person teams in our
 analysis in this paper. Also, from the log (and confirmed by their
 questionnaire), we found that one team made little use of CAnalytics and opted
 for other tools (Google Doc). Hence their data were also excluded. Our final data report includes the result from 22 teams.
 
+\section{Data collection and analysis}
+
 We employed several data collection approaches. We administrated a post-study
-questionnaire. The questions used a 7-point likert scale and included 9 items measuring an individual's
+questionnaire (Appendix E). The questions used a 7-point likert scale and included 7 items measuring an individual's
 self-reported awareness, 7 items for
 communication quality, 6 items for collective efficacy, and 3 items for perceived performance \citep{Convertino2011}. We also used NASA-TLX \citep{Hart1988} to measure cognitive load. The questionnaire
 also included open-ended questions asking how the tool helped or impeded their
-work. We captured user interactions with system logs. Instead of simply logging
+work. 
+
+We captured user interactions with system logs. Instead of simply logging
 low-level events like mouse clicks and keyboard strokes, we recorded meaningful actions such
-as creating an annotation and deleting an entity. Finally, we reviewed team
+as creating an annotation and deleting an entity. The full log schema is listed in Section~\ref{activity-og}.  
+
+Finally, we reviewed team
 reports and graded them as an indicator of team performance. Since the task was
 open-ended, there was no single right answer. We constructed an assessment
 rubric together with the course instructor by listing all possible hypotheses
@@ -90,3 +96,9 @@ and evidence from the documents, with a full score of 16. I and another research
 less than 2, an average is set as the final grade (14 out of 22 reports).
 Otherwise (the rest 8 reports), the two graders review the reports together and
 make an agreement.
+
+Multiple methods were used to analyze the collected data. We analyzed the artifacts (visualizations and annotations) people created. The premise is that artifacts teams create to support their work activity can be a window into their cognitive and collaborative process \citep{Carroll2013}. Since all user data is stored in the system, we could restore user-created artifacts and compare the differences across teams. We also pulled user's interaction logs and visualized them in sequence, in an attempt to identify patterns within a team and across teams.
+
+We did qualitative analysis over answers from the open-ended questions. We employed an open coding approach in development of our coding schema. We iteratively went through the data and added emerging themes to the schema. The believability of the result is achieved by data triangulation among user logs and their created artifacts. Each interpretation is followed by users’ quoted comments. The repeatedly identified themes guarantee believable interpretation output in the study. 
+
+Finally, we did statistic analysis over survey scales and team performance (as measured by report grades). The analysis attempted to capture factors that account for team performance variance quantitatively. The result is reported below.
