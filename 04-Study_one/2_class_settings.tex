@@ -1,4 +1,4 @@
-\section{Setting and Method}\label{classroom-study-settings}
+\section{Classroom Settings}\label{classroom-study-settings}
 
 The setting for this study was an undergraduate course in an intelligence
 training program at Pennsylvania State University. The program was designed to train students
@@ -75,14 +75,20 @@ analysis in this paper. Also, from the log (and confirmed by their
 questionnaire), we found that one team made little use of CAnalytics and opted
 for other tools (Google Doc). Hence their data were also excluded. Our final data report includes the result from 22 teams.
 
+\section{Data collection and analysis}
+
 We employed several data collection approaches. We administrated a post-study
 questionnaire (Appendix E). The questions used a 7-point likert scale and included 7 items measuring an individual's
 self-reported awareness, 7 items for
 communication quality, 6 items for collective efficacy, and 3 items for perceived performance \citep{Convertino2011}. We also used NASA-TLX \citep{Hart1988} to measure cognitive load. The questionnaire
 also included open-ended questions asking how the tool helped or impeded their
-work. We captured user interactions with system logs. Instead of simply logging
+work. 
+
+We captured user interactions with system logs. Instead of simply logging
 low-level events like mouse clicks and keyboard strokes, we recorded meaningful actions such
-as creating an annotation and deleting an entity. Finally, we reviewed team
+as creating an annotation and deleting an entity. The full log schema is listed in Section~\ref{activity-og}.  
+
+Finally, we reviewed team
 reports and graded them as an indicator of team performance. Since the task was
 open-ended, there was no single right answer. We constructed an assessment
 rubric together with the course instructor by listing all possible hypotheses
@@ -90,3 +96,9 @@ and evidence from the documents, with a full score of 16. I and another research
 less than 2, an average is set as the final grade (14 out of 22 reports).
 Otherwise (the rest 8 reports), the two graders review the reports together and
 make an agreement.
+
+Multiple methods were used to analyze the collected data. We analyzed the artifacts (visualizations and annotations) people created. The premise is that artifacts teams create to support their work activity can be a window into their cognitive and collaborative process \citep{Carroll2013}. Since all user data is stored in the system, we could restore user-created artifacts and compare the differences across teams. We also pulled user's interaction logs and visualized them in sequence, in an attempt to identify patterns within a team and across teams.
+
+We did qualitative analysis over answers from the open-ended questions. We employed an open coding approach in development of our coding schema. We iteratively went through the data and added emerging themes to the schema. The believability of the result is achieved by data triangulation among user logs and their created artifacts. Each interpretation is followed by users’ quoted comments. The repeatedly identified themes guarantee believable interpretation output in the study. 
+
+Finally, we did statistic analysis over survey scales and team performance (as measured by report grades). The analysis attempted to capture factors that account for team performance variance quantitatively. The result is reported below.
